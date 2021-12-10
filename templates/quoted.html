@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quoted
+{% endblock %}
+
+{% block main %}
+
+    <div action="/quoted" method="post">
+        <div class="quote return">
+            A share of
+            {{ name }} ({{ symbol }}) costs {{ price }}
+            <!--<complete="off" autofocus class="form-control" name="symbol" placeholder="Symbol" type="text">-->
+        </div>
+
+    </div>
+{% endblock %}

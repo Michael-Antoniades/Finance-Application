@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Buy
+{% endblock %}
+
+{% block main %}
+
+{% if invalid_buy %}
+        <div class="alert alert-info" role="alert" style='width:100%'>
+            Couldn't find symbol please try again
+        </div>
+{% endif %}
+
+{% if no_stock %}
+        <div class="alert alert-info" role="alert" style='width:100%'>
+            Please enter the quantity you wish to purchase
+        </div>
+{% endif %}
+
+    <form action="/buy" method="post">
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="symbol" placeholder="Stock symbol" type="text">
+        </div>
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="shares" placeholder="Shares" type="text">
+        </div>
+        <button class="btn btn-primary" type="submit">Buy</button>
+    </form>
+{% endblock %}
