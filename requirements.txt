@@ -1,0 +1,6 @@
+cs50 IDE 
+Flask 
+Flask-Session
+requests
+
+#cs50 doesn't allow this to be viewable in Heroku, must be in CS50 ide
