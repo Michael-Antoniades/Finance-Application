@@ -1,3 +1,3 @@
 # Finance-Application
 
-Master Branch - Init Commit
+Master Branch - Initial Commit
